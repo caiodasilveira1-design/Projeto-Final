@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bee4bwmyhbxbb"]
+
+[ext_resource type="Texture2D" uid="uid://b0sapugcxx4h7" path="res://imagens do chat/Menu inicial.png" id="1_u4fxu"]
+[ext_resource type="Script" uid="uid://d1abcl77unkxa" path="res://scripts/menu_inicial.gd" id="2_3exob"]
+
+[node name="Menu inicial" type="Sprite2D" unique_id=1089880542]
+position = Vector2(574.5, 324.75528)
+scale = Vector2(0.7480468, 0.63233453)
+texture = ExtResource("1_u4fxu")
+script = ExtResource("2_3exob")
+
+[node name="botao jogos" type="Button" parent="." unique_id=698423144]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Jogos"
+
+[connection signal="pressed" from="botao jogos" to="." method="_on_button_pressed"]

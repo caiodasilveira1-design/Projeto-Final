@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cqv2k2k82q5hf"]
+
+[ext_resource type="Texture2D" uid="uid://b0sapugcxx4h7" path="res://imagens do chat/Menu inicial.png" id="1_csxqa"]
+[ext_resource type="Script" uid="uid://b3qubt0kdf4e6" path="res://scripts/jogos.gd" id="2_7gsa3"]
+
+[node name="jogos" type="Sprite2D" unique_id=112520288]
+position = Vector2(580.5, 325.5)
+scale = Vector2(0.7532552, 0.63378906)
+texture = ExtResource("1_csxqa")
+script = ExtResource("2_7gsa3")
+
+[node name="voltar" type="Button" parent="." unique_id=500658581]
+offset_left = 567.53674
+offset_top = 379.4638
+offset_right = 621.53674
+offset_bottom = 410.4638
+text = "voltar
+"
+
+[connection signal="pressed" from="voltar" to="." method="_on_voltar_pressed"]

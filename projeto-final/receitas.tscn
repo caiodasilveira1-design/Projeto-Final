@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d4cniit8teqfh"]
+
+[ext_resource type="Texture2D" uid="uid://b48io20618kyy" path="res://imagens do chat/receitas.png" id="1_6jfok"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=497034636]
+position = Vector2(579.25006, 323.25)
+scale = Vector2(0.4050211, 0.40281254)
+texture = ExtResource("1_6jfok")

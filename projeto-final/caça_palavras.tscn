@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://blld6bdvm6460"]
+
+[ext_resource type="Texture2D" uid="uid://cgon6w37mulrk" path="res://imagens do chat/Estudo Aconchegante para Grandes Ideias.png" id="1_bl4ex"]
+
+[node name="caça palavras" type="Sprite2D" unique_id=30986161]
+position = Vector2(576, 322.5)
+scale = Vector2(0.74869794, 0.63183594)
+texture = ExtResource("1_bl4ex")

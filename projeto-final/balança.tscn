@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c3fsatwlont8d"]
+
+[ext_resource type="Texture2D" uid="uid://bgsxcpwspgsly" path="res://imagens do chat/balança.png" id="1_x08xy"]
+
+[node name="balança" type="Sprite2D" unique_id=976064482]
+position = Vector2(573, 327.00003)
+scale = Vector2(0.7504883, 0.71289057)
+texture = ExtResource("1_x08xy")

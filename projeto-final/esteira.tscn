@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c1uivh6ayls2w"]
+
+[ext_resource type="Texture2D" uid="uid://d05iqt0821g61" path="res://imagens do chat/esteira.png" id="1_hhedt"]
+
+[node name="esteira" type="Sprite2D" unique_id=2048948155]
+position = Vector2(577, 325.75)
+scale = Vector2(0.6866029, 0.6859724)
+texture = ExtResource("1_hhedt")

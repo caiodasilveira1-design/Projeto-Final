@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bee4bwmyhbxbb"]
+
+[ext_resource type="Texture2D" uid="uid://b0sapugcxx4h7" path="res://imagens do chat/Menu inicial.png" id="1_u4fxu"]
+
+[node name="Menu inicial" type="Sprite2D" unique_id=1089880542]
+position = Vector2(576, 324.75528)
+scale = Vector2(0.7460937, 0.63233453)
+texture = ExtResource("1_u4fxu")

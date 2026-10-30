@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bngfg72m1mude"]
+
+[ext_resource type="Texture2D" uid="uid://olpgh7nuyl8e" path="res://imagens do chat/Gemini_Generated_Image_915r915r915r915r.jpeg" id="1_jp04t"]
+
+[node name="configurações" type="Sprite2D" unique_id=2041044456]
+texture = ExtResource("1_jp04t")

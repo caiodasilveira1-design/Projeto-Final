@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c1yf2cr8i4you"]
+
+[ext_resource type="Texture2D" uid="uid://b0sapugcxx4h7" path="res://imagens do chat/Menu inicial.png" id="1_csxqa"]
+
+[node name="jogos" type="Sprite2D" unique_id=112520288]
+position = Vector2(580.5, 325.5)
+scale = Vector2(0.7532552, 0.63378906)
+texture = ExtResource("1_csxqa")
