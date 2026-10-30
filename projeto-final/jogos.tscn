@@ -17,4 +17,19 @@ offset_bottom = 410.4638
 text = "voltar
 "
 
+[node name="livrodereceitas" type="Button" parent="." unique_id=1172655992]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Livro de Receitas
+"
+
+[node name="esteira" type="Button" parent="." unique_id=594908527]
+offset_left = -8.629214
+offset_top = 65.4792
+offset_right = 157.37079
+offset_bottom = 96.4792
+text = "Esteira de alimentos"
+
 [connection signal="pressed" from="voltar" to="." method="_on_voltar_pressed"]
+[connection signal="pressed" from="livrodereceitas" to="." method="_on_livrodereceitas_pressed"]
+[connection signal="pressed" from="esteira" to="." method="_on_esteira_pressed"]

@@ -4,14 +4,33 @@
 [ext_resource type="Script" uid="uid://d1abcl77unkxa" path="res://scripts/menu_inicial.gd" id="2_3exob"]
 
 [node name="Menu inicial" type="Sprite2D" unique_id=1089880542]
-position = Vector2(574.5, 324.75528)
+position = Vector2(577, 348.00003)
 scale = Vector2(0.7480468, 0.63233453)
 texture = ExtResource("1_u4fxu")
 script = ExtResource("2_3exob")
 
 [node name="botao jogos" type="Button" parent="." unique_id=698423144]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 6.015666
+offset_top = 5.131344
+offset_right = 55.015667
+offset_bottom = 36.131344
 text = "Jogos"
 
+[node name="configuracoes" type="Button" parent="." unique_id=1526079696]
+offset_left = -27.4047
+offset_top = 168.01979
+offset_right = 89.5953
+offset_bottom = 199.01979
+text = "configurações
+"
+
+[node name="progresso" type="Button" parent="." unique_id=803326580]
+offset_left = -10.02611
+offset_top = 77.87763
+offset_right = 74.97389
+offset_bottom = 108.87763
+text = "Progresso"
+
 [connection signal="pressed" from="botao jogos" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="configuracoes" to="." method="_on_configuracoes_pressed"]
+[connection signal="pressed" from="progresso" to="." method="_on_progresso_pressed"]

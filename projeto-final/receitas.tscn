@@ -1,8 +1,20 @@
 [gd_scene format=3 uid="uid://d4cniit8teqfh"]
 
 [ext_resource type="Texture2D" uid="uid://b48io20618kyy" path="res://imagens do chat/receitas.png" id="1_6jfok"]
+[ext_resource type="Script" uid="uid://dibs1xdrjj52v" path="res://scripts/receitas.gd" id="2_qa5b1"]
 
 [node name="Sprite2D" type="Sprite2D" unique_id=497034636]
-position = Vector2(579.25006, 323.25)
+position = Vector2(578, 323)
 scale = Vector2(0.4050211, 0.40281254)
 texture = ExtResource("1_6jfok")
+script = ExtResource("2_qa5b1")
+
+[node name="voltar" type="Button" parent="." unique_id=2005609072]
+offset_left = 1064.1421
+offset_top = 551.1249
+offset_right = 1119.1421
+offset_bottom = 582.1249
+text = "Voltar
+"
+
+[connection signal="pressed" from="voltar" to="." method="_on_voltar_pressed"]
