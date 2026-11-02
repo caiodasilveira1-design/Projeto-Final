@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://u4b87oy1vq5w"]
 
 [ext_resource type="Texture2D" uid="uid://cejb1rh7xgw7o" path="res://imagens do chat/livro de receitas.png" id="1_p2tgp"]
+[ext_resource type="Script" uid="uid://dk3yg34jyu6jp" path="res://CatalogooReceitas.gd" id="1_wlxxy"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wlxxy"]
 bg_color = Color(0.972549, 0.8745098, 0.65882355, 1)
@@ -10,6 +11,7 @@ corner_detail = 13
 [node name="Catalogo  Receitas" type="Control" unique_id=636290605]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_wlxxy")
 
 [node name="Livro" type="TextureRect" parent="." unique_id=652531984]
 layout_mode = 0
@@ -32,24 +34,71 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.42745098, 0.26666668, 0.16862746, 1)
 theme_override_colors/font_focus_color = Color(0.972549, 0.8745098, 0.65882355, 1)
 theme_override_colors/font_pressed_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+theme_override_colors/font_hover_color = Color(0.9722312, 0.7542833, 0.7682782, 1)
 theme_override_colors/font_disabled_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0.76015854, 0.8038238, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.69411767, 0.4, 0.32156864, 1)
 theme_override_constants/h_separation = 8
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_wlxxy")
 text = "Salada Colorida"
 
-[node name="Sopa" type="Button" parent="ListaReceitas" unique_id=313776270]
+[node name="Sopa" type="Button" parent="ListaReceitas" unique_id=1580526762]
+custom_minimum_size = Vector2(50, 45)
 layout_mode = 2
+theme_override_colors/font_color = Color(0.42745098, 0.26666668, 0.16862746, 1)
+theme_override_colors/font_focus_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+theme_override_colors/font_pressed_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+theme_override_colors/font_disabled_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+theme_override_constants/h_separation = 8
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_wlxxy")
 text = "Sopa"
 
-[node name="Omelete" type="Button" parent="ListaReceitas" unique_id=1979125353]
+[node name="Omelete" type="Button" parent="ListaReceitas" unique_id=2116499940]
+custom_minimum_size = Vector2(50, 45)
 layout_mode = 2
+theme_override_colors/font_color = Color(0.42745098, 0.26666668, 0.16862746, 1)
+theme_override_colors/font_focus_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+theme_override_colors/font_pressed_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+theme_override_colors/font_disabled_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+theme_override_constants/h_separation = 8
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_wlxxy")
 text = "Omelete"
 
-[node name="Panqueca" type="Button" parent="ListaReceitas" unique_id=185460793]
+[node name="Panqueca" type="Button" parent="ListaReceitas" unique_id=289379560]
+custom_minimum_size = Vector2(50, 45)
 layout_mode = 2
-text = "Paqueca"
+theme_override_colors/font_color = Color(0.42745098, 0.26666668, 0.16862746, 1)
+theme_override_colors/font_focus_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+theme_override_colors/font_pressed_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+theme_override_colors/font_disabled_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+theme_override_constants/h_separation = 8
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_wlxxy")
+text = "Panqueca"
 
-[node name="Musse" type="Button" parent="ListaReceitas" unique_id=851166097]
+[node name="Detalhes" type="VBoxContainer" parent="." unique_id=1733992505]
+layout_mode = 0
+offset_left = 615.0
+offset_top = 67.0
+offset_right = 1037.0
+offset_bottom = 518.0
+
+[node name="NomeReceita" type="Label" parent="Detalhes" unique_id=1005034541]
 layout_mode = 2
-text = "Musse fiet"
+theme_override_colors/font_color = Color(0.42745098, 0.26666668, 0.16862746, 1)
+theme_override_font_sizes/font_size = 48
+
+[node name="Tempo" type="Label" parent="Detalhes" unique_id=536855742]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.42745098, 0.26666668, 0.16862746, 1)
+theme_override_font_sizes/font_size = 22
+
+[node name="Ingredientes" type="Label" parent="Detalhes" unique_id=1798067912]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.42745098, 0.26666668, 0.16862746, 1)
+theme_override_constants/line_spacing = 5
+theme_override_font_sizes/font_size = 22
+autowrap_mode = 2

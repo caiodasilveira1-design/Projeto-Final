@@ -7,7 +7,7 @@ func _on_voltar_pressed():
 
 
 func _on_livrodereceitas_pressed():
-	get_tree().change_scene_to_file("res://livro de receitas.tscn");
+	get_tree().change_scene_to_file("res://Livro de receitas e receitas/livro_de_receitas.tscn");
 	
 
 

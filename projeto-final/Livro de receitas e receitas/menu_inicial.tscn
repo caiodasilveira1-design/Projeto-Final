@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://dacrkwfg723ki"]
+
+[ext_resource type="Texture2D" uid="uid://b0sapugcxx4h7" path="res://imagens do chat/Menu inicial.png" id="1_j0vjx"]
+[ext_resource type="Script" uid="uid://d1abcl77unkxa" path="res://scripts/menu_inicial.gd" id="2_lidhf"]
+
+[sub_resource type="FontFile" id="FontFile_13656"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+
+[node name="Menu inicial" type="Sprite2D" unique_id=1089880542]
+position = Vector2(577, 348.00003)
+scale = Vector2(0.7480468, 0.63233453)
+texture = ExtResource("1_j0vjx")
+script = ExtResource("2_lidhf")
+
+[node name="botao jogos" type="Button" parent="." unique_id=698423144]
+offset_left = -26.28199
+offset_top = 39.092754
+offset_right = 72.18798
+offset_bottom = 67.09276
+theme_override_fonts/font = SubResource("FontFile_13656")
+theme_override_font_sizes/font_size = 14
+text = "Jogos"
+
+[node name="configuracoes" type="Button" parent="." unique_id=1526079696]
+offset_left = -25.399477
+offset_top = 154.9812
+offset_right = 91.600525
+offset_bottom = 192.93579
+text = "configurações
+"
+
+[node name="progresso" type="Button" parent="." unique_id=803326580]
+offset_left = -22.72585
+offset_top = 98.04931
+offset_right = 62.27415
+offset_bottom = 129.04932
+text = "Progresso"
+
+[connection signal="pressed" from="botao jogos" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="configuracoes" to="." method="_on_configuracoes_pressed"]
+[connection signal="pressed" from="progresso" to="." method="_on_progresso_pressed"]
