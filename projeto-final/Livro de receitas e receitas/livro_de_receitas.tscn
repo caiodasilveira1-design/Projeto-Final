@@ -102,3 +102,13 @@ theme_override_colors/font_color = Color(0.42745098, 0.26666668, 0.16862746, 1)
 theme_override_constants/line_spacing = 5
 theme_override_font_sizes/font_size = 22
 autowrap_mode = 2
+
+[node name="Button" type="Button" parent="." unique_id=1742581058]
+layout_mode = 0
+offset_left = 1017.0
+offset_top = 487.0
+offset_right = 1071.0
+offset_bottom = 518.0
+text = "voltar"
+
+[connection signal="pressed" from="Button" to="." method="_on_voltar_pressed"]
