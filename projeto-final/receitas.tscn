@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://dibs1xdrjj52v" path="res://scripts/receitas.gd" id="2_qa5b1"]
 
 [node name="Sprite2D" type="Sprite2D" unique_id=497034636]
-position = Vector2(578, 323)
+position = Vector2(574.00006, 332)
 scale = Vector2(0.4050211, 0.40281254)
 texture = ExtResource("1_6jfok")
 script = ExtResource("2_qa5b1")

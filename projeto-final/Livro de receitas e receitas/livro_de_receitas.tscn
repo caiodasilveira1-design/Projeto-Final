@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://u4b87oy1vq5w"]
+
+[ext_resource type="Texture2D" uid="uid://cejb1rh7xgw7o" path="res://imagens do chat/livro de receitas.png" id="1_p2tgp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wlxxy"]
+bg_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+border_blend = true
+corner_detail = 13
+
+[node name="Catalogo  Receitas" type="Control" unique_id=636290605]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Livro" type="TextureRect" parent="." unique_id=652531984]
+layout_mode = 0
+offset_right = 1174.0
+offset_bottom = 661.0
+texture = ExtResource("1_p2tgp")
+expand_mode = 3
+
+[node name="ListaReceitas" type="VBoxContainer" parent="." unique_id=79231910]
+layout_mode = 0
+offset_left = 113.0
+offset_top = 96.0
+offset_right = 539.0
+offset_bottom = 453.0
+theme_override_constants/separation = 50
+
+[node name="Salada" type="Button" parent="ListaReceitas" unique_id=1985118621]
+custom_minimum_size = Vector2(50, 45)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.42745098, 0.26666668, 0.16862746, 1)
+theme_override_colors/font_focus_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+theme_override_colors/font_pressed_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+theme_override_colors/font_disabled_color = Color(0.972549, 0.8745098, 0.65882355, 1)
+theme_override_constants/h_separation = 8
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_wlxxy")
+text = "Salada Colorida"
+
+[node name="Sopa" type="Button" parent="ListaReceitas" unique_id=313776270]
+layout_mode = 2
+text = "Sopa"
+
+[node name="Omelete" type="Button" parent="ListaReceitas" unique_id=1979125353]
+layout_mode = 2
+text = "Omelete"
+
+[node name="Panqueca" type="Button" parent="ListaReceitas" unique_id=185460793]
+layout_mode = 2
+text = "Paqueca"
+
+[node name="Musse" type="Button" parent="ListaReceitas" unique_id=851166097]
+layout_mode = 2
+text = "Musse fiet"
