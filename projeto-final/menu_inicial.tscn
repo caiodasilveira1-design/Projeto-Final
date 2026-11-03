@@ -3,65 +3,90 @@
 [ext_resource type="Texture2D" uid="uid://b0sapugcxx4h7" path="res://imagens do chat/Menu inicial.png" id="1_u4fxu"]
 [ext_resource type="Script" uid="uid://d1abcl77unkxa" path="res://scripts/menu_inicial.gd" id="2_3exob"]
 
-[sub_resource type="FontFile" id="FontFile_13656"]
-cache/0/variation_coordinates = {}
-cache/0/face_index = 0
-cache/0/embolden = 0.0
-cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
-cache/0/spacing_top = 0
-cache/0/spacing_bottom = 0
-cache/0/spacing_space = 0
-cache/0/spacing_glyph = 0
-cache/0/baseline_offset = 0.0
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/50/0/ascent = 0.0
-cache/0/50/0/descent = 0.0
-cache/0/50/0/underline_position = 0.0
-cache/0/50/0/underline_thickness = 0.0
-cache/0/50/0/scale = 1.0
-cache/0/15/0/ascent = 0.0
-cache/0/15/0/descent = 0.0
-cache/0/15/0/underline_position = 0.0
-cache/0/15/0/underline_thickness = 0.0
-cache/0/15/0/scale = 1.0
-cache/0/14/0/ascent = 0.0
-cache/0/14/0/descent = 0.0
-cache/0/14/0/underline_position = 0.0
-cache/0/14/0/underline_thickness = 0.0
-cache/0/14/0/scale = 1.0
+[sub_resource type="FontVariation" id="FontVariation_m0fcn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s2mq1"]
+bg_color = Color(0.972549, 0.85882354, 0.65882355, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rehmf"]
+bg_color = Color(0.972549, 0.85882354, 0.65882355, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+corner_detail = 13
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kbbbv"]
+bg_color = Color(0.972549, 0.85882354, 0.65882355, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
 
 [node name="Menu inicial" type="Sprite2D" unique_id=1089880542]
-position = Vector2(577, 348.00003)
-scale = Vector2(0.7480468, 0.63233453)
+position = Vector2(577.375, 323.03058)
+scale = Vector2(0.75081384, 0.6327527)
 texture = ExtResource("1_u4fxu")
 script = ExtResource("2_3exob")
 
 [node name="botao jogos" type="Button" parent="." unique_id=698423144]
-offset_left = -26.28199
-offset_top = 39.092754
-offset_right = 72.18798
-offset_bottom = 67.09276
-theme_override_fonts/font = SubResource("FontFile_13656")
-theme_override_font_sizes/font_size = 14
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -887.0375
+offset_top = -529.4327
+offset_right = -641.97003
+offset_bottom = -475.03387
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.42745098, 0.26666668, 0.16862746, 1)
+theme_override_fonts/font = SubResource("FontVariation_m0fcn")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_s2mq1")
 text = "Jogos"
 
 [node name="configuracoes" type="Button" parent="." unique_id=1526079696]
-offset_left = -25.399477
-offset_top = 154.9812
-offset_right = 91.600525
-offset_bottom = 192.93579
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -887.03754
+offset_top = -340.98627
+offset_right = -641.9701
+offset_bottom = -287.98627
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.42745098, 0.26666668, 0.16862746, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_rehmf")
 text = "configurações
 "
 
 [node name="progresso" type="Button" parent="." unique_id=803326580]
-offset_left = -22.72585
-offset_top = 98.04931
-offset_right = 62.27415
-offset_bottom = 129.04932
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -887.03754
+offset_top = -440.9305
+offset_right = -641.9701
+offset_bottom = -387.9305
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.42745098, 0.26666668, 0.16862746, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_kbbbv")
 text = "Progresso"
 
 [connection signal="pressed" from="botao jogos" to="." method="_on_button_pressed"]

@@ -1,6 +1,5 @@
 extends Control
 
-
 var receitas = {
 	"Salada": {
 		"nome": "Salada colorida",
@@ -37,7 +36,6 @@ var receitas = {
             "Óleo"
 		]
 	}
-
 }
 
 func _ready():
@@ -45,7 +43,6 @@ func _ready():
 	$ListaReceitas/Sopa.pressed.connect(func(): mostrar_receita("Sopa"))
 	$ListaReceitas/Omelete.pressed.connect(func(): mostrar_receita("Omelete"))
 	$ListaReceitas/Panqueca.pressed.connect(func(): mostrar_receita("Panqueca"))
-
 
 func mostrar_receita(id_receita: String):
 	var receita = receitas[id_receita]
@@ -61,6 +58,5 @@ func mostrar_receita(id_receita: String):
 	$Detalhes/Ingredientes.text = texto_ingredientes
 
 
-	
 func _on_voltar_pressed():
-	get_tree().change_scene_to_file("res://jogos.tscn")
+		get_tree().change_scene_to_file("res://jogos.tscn")
