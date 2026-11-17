@@ -50,7 +50,7 @@ theme_override_colors/font_color = Color(0.42745098, 0.26666668, 0.16862746, 1)
 theme_override_fonts/font = SubResource("FontVariation_m0fcn")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_s2mq1")
-text = "Jogos"
+text = "Jogar"
 
 [node name="configuracoes" type="Button" parent="." unique_id=1526079696]
 anchors_preset = 8

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://u4b87oy1vq5w"]
 
 [ext_resource type="Texture2D" uid="uid://cejb1rh7xgw7o" path="res://imagens do chat/livro de receitas.png" id="1_p2tgp"]
-[ext_resource type="Script" uid="uid://dk3yg34jyu6jp" path="res://CatalogooReceitas.gd" id="1_wlxxy"]
+[ext_resource type="Script" uid="uid://dk3yg34jyu6jp" path="res://scripts/CatalogooReceitas.gd" id="1_wlxxy"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wlxxy"]
 bg_color = Color(0.972549, 0.85882354, 0.65882355, 1)

@@ -20,6 +20,7 @@ text = "voltar
 [node name="livrodereceitas" type="Button" parent="." unique_id=1172655992]
 offset_right = 8.0
 offset_bottom = 8.0
+theme_override_colors/font_color = Color(0.42745098, 0.26666668, 0.16862746, 1)
 text = "Livro de Receitas
 "
 

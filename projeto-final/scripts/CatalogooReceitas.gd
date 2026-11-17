@@ -1,5 +1,8 @@
 extends Control
 
+var receita_escolhida: String = ""
+
+
 var receitas = {
 	"Salada": {
 		"nome": "Salada colorida",
